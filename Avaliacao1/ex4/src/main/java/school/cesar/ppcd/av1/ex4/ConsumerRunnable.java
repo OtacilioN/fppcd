@@ -4,7 +4,7 @@ import static school.cesar.ppcd.av1.ex4.Util.randomSleep;
 
 public class ConsumerRunnable implements Runnable {
 	private ProducerConsumer producerConsumer;
-	
+
 	public ConsumerRunnable(ProducerConsumer producerConsumer) {
 		this.producerConsumer = producerConsumer;
 	}
@@ -15,7 +15,7 @@ public class ConsumerRunnable implements Runnable {
 			System.out.println("Consumiu " + request);
 			System.out.println(String.format("Consumidor parou %d ms", randomSleep()));
 		}
-		
+
 	}
 
 }
